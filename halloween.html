@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Halloween Fun</title>
+    <!-- <meta name="description" content="sample experiment">
+    <meta name="viewport" content: "width-devide-width"> -->
+    <!-- <link rel="stylesheets"  href="animation.css"> -->
+  </head>
+
+  <style>
+    body {
+        background-image: url("./images/halloween_moon_background.jpg");
+    }
+
+    h1 {
+        color: bold;
+        font-size: 50px;
+        font-family: "InkFree", serif;
+        text-align: center;
+    }
+
+    p {
+        color: black bold;
+        font-family: "Tahoma", serif;
+        text-align: center;
+        font-size: 30px;
+    }
+
+#bats {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation-name: "bats";
+    -webkit-animation-duration: 20s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bats {
+    0%   { left:0px; top:0px;}
+    20%  { right:0px; bottom:20px;}
+    40%  { right:0px; top:100px;}
+    60%  { left:500px; top:60px;}
+    80% { right:600px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+#ghosts {
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+    -webkit-animation-name: "ghosts";
+    -webkit-animation-duration: 20s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ghosts {
+    0%   { left:0px; top:0px;}
+    20%  { right:500px; top:20px;}
+    40%  { right:500px; bottom:300px;}
+    60%  { left:500px; top:60px;}
+    80% { right:600px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+
+</style>
+
+<body>
+<h1>HAPPY HALLOWEEN</h1>
+
+<p>WATCH OUT FOR THE GOULS AND GOBLINS...</p>
+<div>
+    <img src="./images/red_bat_animation.png"   width="80px"  height="80px" alt="bat" img id="bats"></img>
+</div>
+<div id = "ghosts">
+    <img src="./images/ghosts.png"   width="80px"  height="80px" alt="ghosts" img id="ghosts"></img>
+</div>
+
+</body>
+</html>
